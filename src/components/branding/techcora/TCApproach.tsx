@@ -36,26 +36,16 @@ export default function TCApproach() {
             style={{ fontFamily: "Urbanist" }}
         >
             {/* Top text section */}
-            <div className="flex justify-between items-start px-[80px] pt-[60px] pb-[50px]">
+            <div className="flex flex-col lg:flex-row justify-between items-start px-6 md:px-12 lg:px-[80px] pt-8 md:pt-12 lg:pt-[60px] pb-8 md:pb-12 lg:pb-[50px] gap-4 lg:gap-0">
                 {/* Left — Title & Subtitle */}
                 <div>
                     <h2
-                        className="leading-[100%] tracking-[0%]"
-                        style={{
-                            fontSize: 42,
-                            fontWeight: 600,
-                            color: "#021B2A",
-                        }}
+                        className="text-3xl md:text-4xl lg:text-[42px] leading-[100%] tracking-[0%] font-semibold text-[#021B2A]"
                     >
                         Techcora
                     </h2>
                     <p
-                        className="mt-[11px] leading-[40.6px] tracking-[0%]"
-                        style={{
-                            fontSize: 28,
-                            fontWeight: 600,
-                            color: "#021B2A",
-                        }}
+                        className="mt-2 lg:mt-[11px] text-xl md:text-2xl lg:text-[28px] leading-snug lg:leading-[40.6px] tracking-[0%] font-semibold text-[#021B2A]"
                     >
                         Branding
                     </p>
@@ -63,12 +53,7 @@ export default function TCApproach() {
 
                 {/* Right — Description */}
                 <p
-                    className="leading-[26px] tracking-[2%] max-w-[738px]"
-                    style={{
-                        fontSize: 18,
-                        fontWeight: 400,
-                        color: "#001929",
-                    }}
+                    className="text-base lg:text-lg leading-relaxed lg:leading-[26px] tracking-[2%] max-w-full lg:max-w-[738px] font-normal text-[#001929]"
                 >
                     Techcora is an ambitious company in India which is planning to build a
                     group of world-changing companies from India in Software, Robotics,
@@ -77,8 +62,8 @@ export default function TCApproach() {
                 </p>
             </div>
 
-            {/* Dot grid section */}
-            <div className="px-[80px] flex flex-col gap-[30px] pb-[30px]">
+            {/* Dot grid section — hidden on mobile, visible on lg */}
+            <div className="hidden lg:flex px-[80px] flex-col gap-[30px] pb-[30px]">
                 {/* Row 1 */}
                 <DotRow />
 
@@ -113,23 +98,12 @@ export default function TCApproach() {
                     {/* Center: APPROACH label + heading */}
                     <div className="flex-1 flex flex-col items-center justify-center">
                         <span
-                            className="uppercase text-center tracking-[3%]"
-                            style={{
-                                fontSize: 18,
-                                fontWeight: 600,
-                                lineHeight: "30px",
-                                color: "#021B2A",
-                            }}
+                            className="uppercase text-center tracking-[3%] text-lg font-semibold leading-[30px] text-[#021B2A]"
                         >
                             APPROACH
                         </span>
                         <h3
-                            className="text-center leading-[100%] tracking-[0%] mt-[8px]"
-                            style={{
-                                fontSize: 42,
-                                fontWeight: 600,
-                                color: "#021B2A",
-                            }}
+                            className="text-center leading-[100%] tracking-[0%] mt-[8px] text-[42px] font-semibold text-[#021B2A]"
                         >
                             The inspiration of this identity
                             <br />
@@ -167,47 +141,49 @@ export default function TCApproach() {
                 <DotRow />
             </div>
 
+            {/* Mobile/Tablet Approach section — visible on mobile, hidden on lg */}
+            <div className="flex lg:hidden flex-col items-center px-6 md:px-12 py-8 md:py-12 gap-4">
+                <span
+                    className="uppercase text-center tracking-[3%] text-base md:text-lg font-semibold leading-[30px] text-[#021B2A]"
+                >
+                    APPROACH
+                </span>
+                <h3
+                    className="text-center text-2xl md:text-3xl font-semibold text-[#021B2A] leading-tight"
+                >
+                    The inspiration of this identity emerged from the team&rsquo;s deep dive
+                    into the core of technology.
+                </h3>
+            </div>
+
             {/* Identity Communication Section — dark rectangle */}
             <div
-                className="mx-[80px] mt-[60px] relative overflow-hidden flex"
+                className="mx-6 md:mx-12 lg:mx-[80px] mt-8 md:mt-12 lg:mt-[60px] relative overflow-hidden flex flex-col lg:flex-row min-h-[280px] lg:min-h-[325px]"
                 style={{
                     backgroundColor: "#0A0A0A",
-                    height: 325, // 60px top + 265px image height = 325px total height
                 }}
             >
                 {/* Left text content */}
-                <div className="relative z-10 flex flex-col px-[80px] py-[60px]">
+                <div className="relative z-10 flex flex-col px-6 md:px-12 lg:px-[80px] py-8 md:py-12 lg:py-[60px]">
                     <h3
-                        className="leading-[100%] tracking-[0%]"
+                        className="text-2xl md:text-[28px] lg:text-[32px] leading-tight lg:leading-[100%] tracking-[0%] font-semibold text-[#F85419] max-w-full lg:max-w-[472px]"
                         style={{
                             fontFamily: "Urbanist",
-                            fontSize: 32,
-                            fontWeight: 600,
-                            color: "#F85419",
-                            width: 472, // Prevent line break as per Figma
                         }}
                     >
                         The identity needed to communicate
                     </h3>
 
-                    <ul className="mt-[30px] flex flex-col gap-[16px]">
+                    <ul className="mt-6 lg:mt-[30px] flex flex-col gap-3 lg:gap-[16px]">
                         {["Technical depth", "Structured thinking", "Scalability", "Future-readiness"].map((item) => (
-                            <li key={item} className="flex items-center gap-[14px]">
+                            <li key={item} className="flex items-center gap-3 lg:gap-[14px]">
                                 <span
-                                    className="rounded-full flex-shrink-0"
-                                    style={{
-                                        width: 16,
-                                        height: 16,
-                                        backgroundColor: "#F85419",
-                                    }}
+                                    className="rounded-full flex-shrink-0 w-3 h-3 lg:w-4 lg:h-4 bg-[#F85419]"
                                 />
                                 <span
-                                    className="tracking-[2%]"
+                                    className="tracking-[2%] text-sm lg:text-base font-normal text-white"
                                     style={{
                                         fontFamily: "Urbanist",
-                                        fontSize: 16,
-                                        fontWeight: 400,
-                                        color: "#FFFFFF",
                                     }}
                                 >
                                     {item}
@@ -217,9 +193,9 @@ export default function TCApproach() {
                     </ul>
                 </div>
 
-                {/* Right image — positioned exactly as per Figma mockup */}
+                {/* Right image — hidden on mobile, positioned on desktop */}
                 <div
-                    className="absolute"
+                    className="hidden lg:block absolute"
                     style={{
                         width: 732,
                         height: 265,
@@ -231,8 +207,19 @@ export default function TCApproach() {
                         src="/branding/techcora/dotsWorld.png"
                         alt="Techcora dots world visualization"
                         fill
-                        className="object-cover object-left-top"
+                        className="object-cover object-top-left"
                         sizes="732px"
+                    />
+                </div>
+
+                {/* Mobile-friendly image version */}
+                <div className="lg:hidden relative w-full h-[200px] md:h-[250px]">
+                    <Image
+                        src="/branding/techcora/dotsWorld.png"
+                        alt="Techcora dots world visualization"
+                        fill
+                        className="object-cover object-left-top"
+                        sizes="100vw"
                     />
                 </div>
             </div>

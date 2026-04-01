@@ -90,7 +90,7 @@ export default function Footer() {
                     </div>
 
                     {/* Social Icons + Copyright */}
-                    <div className="flex flex-col items-end gap-6">
+                    <div className="flex flex-col items-start sm:items-end gap-6">
                         <div className="flex gap-3">
                             {socials.map(({ icon: Icon, label }) => (
                                 <a
@@ -113,7 +113,7 @@ export default function Footer() {
                 </div>
 
                 {/* Divider */}
-                <div className="w-full h-[1px] bg-white/15" />
+                <div className="w-full h-px bg-white/15" />
 
                 {/* Useful Resources Section */}
                 <div className="pt-10 pb-16">

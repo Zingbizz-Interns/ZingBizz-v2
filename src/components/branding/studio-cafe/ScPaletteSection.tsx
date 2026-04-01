@@ -9,7 +9,7 @@ export default function ScPaletteSection() {
       <div className="w-full">
         {/* Coffee Cup Image Full Width */}
         <motion.div
-          className="relative w-full aspect-[21/9] min-h-[300px] lg:min-h-[500px]"
+          className="relative w-full aspect-4/3 md:aspect-21/9 min-h-[280px] lg:min-h-[500px]"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, margin: "-80px" }}
@@ -19,7 +19,7 @@ export default function ScPaletteSection() {
             src="/branding/studiocafe/cofeecup.jpg"
             alt="Colour Palette Coffee Cups"
             fill
-            className="object-cover object-center"
+            className="object-contain md:object-cover object-center"
             sizes="100vw"
           />
 

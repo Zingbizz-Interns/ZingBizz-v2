@@ -14,7 +14,7 @@ export default function TCApplication() {
     };
 
     return (
-        <section className="w-full bg-white flex flex-col px-[80px] pb-[80px] gap-[40px]">
+        <section className="w-full bg-white flex flex-col px-6 md:px-12 lg:px-[80px] pb-12 md:pb-16 lg:pb-[80px] gap-6 md:gap-8 lg:gap-[40px]">
             {/* Text Header */}
             <div className="flex flex-col gap-[16px] max-w-[800px]">
                 <h3
@@ -46,7 +46,7 @@ export default function TCApplication() {
             <div className="flex flex-col gap-[30px] w-full">
                 {/* Row 1: App Icon */}
                 <motion.div
-                    className="relative w-full h-[600px]"
+                    className="relative w-full h-[250px] md:h-[400px] lg:h-[600px]"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, margin: "-100px" }}
@@ -69,7 +69,7 @@ export default function TCApplication() {
                     viewport={{ once: false, margin: "-100px" }}
                     variants={imgVariants}
                 >
-                    <div className="relative flex-1 w-full h-[400px] md:h-full">
+                    <div className="relative md:flex-1 w-full h-[250px] md:h-full">
                         <Image
                             src="/branding/techcora/stationary.jpg"
                             alt="Techcora Stationary"
@@ -78,7 +78,7 @@ export default function TCApplication() {
                             sizes="(max-width: 768px) 100vw, 50vw"
                         />
                     </div>
-                    <div className="relative flex-1 w-full h-[400px] md:h-full">
+                    <div className="relative md:flex-1 w-full h-[250px] md:h-full">
                         <Image
                             src="/branding/techcora/doorSign.jpg"
                             alt="Techcora Door Sign"
@@ -91,7 +91,7 @@ export default function TCApplication() {
 
                 {/* Row 3: F1 Car */}
                 <motion.div
-                    className="relative w-full h-[600px]"
+                    className="relative w-full h-[250px] md:h-[400px] lg:h-[600px]"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, margin: "-100px" }}
@@ -114,16 +114,16 @@ export default function TCApplication() {
                     viewport={{ once: false, margin: "-100px" }}
                     variants={imgVariants}
                 >
-                    <div className="relative flex-1 w-full h-[400px] md:h-full">
+                    <div className="relative md:flex-1 w-full h-[250px] md:h-full">
                         <Image
                             src="/branding/techcora/poster.jpg"
                             alt="Techcora Poster"
                             fill
-                            className="object-cover"
+                            className="object-cover object-top md:object-center"
                             sizes="(max-width: 768px) 100vw, 50vw"
                         />
                     </div>
-                    <div className="relative flex-1 w-full h-[400px] md:h-full">
+                    <div className="relative md:flex-1 w-full h-[250px] md:h-full">
                         <Image
                             src="/branding/techcora/spaceship.jpg"
                             alt="Techcora Spaceship"
@@ -136,7 +136,7 @@ export default function TCApplication() {
 
                 {/* Row 5: Brand Guidelines */}
                 <motion.div
-                    className="relative w-full h-[600px]"
+                    className="relative w-full h-[250px] md:h-[400px] lg:h-[600px]"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, margin: "-100px" }}

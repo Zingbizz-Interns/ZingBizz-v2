@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function TCLogo() {
     return (
-        <section className="w-full bg-white flex flex-col px-[80px] pt-0 pb-[80px] gap-[60px]">
+        <section className="w-full bg-white flex flex-col px-6 md:px-12 lg:px-[80px] pt-0 pb-12 md:pb-16 lg:pb-[80px] gap-8 md:gap-12 lg:gap-[60px]">
             <div className="flex flex-col md:flex-row items-center justify-between">
                 {/* Left Content */}
                 <div className="flex-1 max-w-[500px] flex flex-col gap-[24px]">

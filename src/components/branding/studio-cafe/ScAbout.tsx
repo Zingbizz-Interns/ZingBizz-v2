@@ -24,7 +24,7 @@ export default function ScAbout() {
 
   return (
     <section id="about" className="w-full bg-white relative">
-      <div className="w-full max-w-[1440px] overflow-hidden px-6 md:px-12 lg:px-0 lg:py-24 py-12">
+      <div className="w-full max-w-[1440px] mx-auto overflow-hidden px-6 md:px-12 lg:px-0 lg:py-24 py-12">
         <div className="flex flex-col lg:flex-row items-start justify-between gap-10 lg:gap-0">
           {/* Text Content */}
           <motion.div
