@@ -12,7 +12,7 @@ export default function BrandingTCPage() {
     return (
         <main className="min-h-screen bg-[#EAE5D7] text-white font-sans selection:bg-brand-red selection:text-white">
             <Navbar />
-            <section className="w-full relative h-[100vh] bg-[#F5F5F5] overflow-hidden">
+            <section className="w-full relative h-[50vh] min-h-[400px] md:min-h-0 md:h-screen bg-[#F5F5F5] overflow-hidden">
                 <div className="w-full relative h-full flex justify-center items-center">
                     {/* Main Hero Image */}
                     <motion.div
