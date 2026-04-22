@@ -6,6 +6,7 @@ import OurWorksHeader from "@/components/Our-Works/OurWorksHeader";
 import SeeOtherWorks from "@/components/Our-Works/SeeOtherWorks";
 import RelatedBlogs from "@/components/Our-Works/RelatedBlogs";
 import Footer from "@/components/Global/Footer";
+import type { Article } from "@/components/shared/ArticleGrid";
 
 const images: GalleryImage[] = [
   { src: "/our-works/branding/11Academy.png", alt: "11 Academy" },
@@ -19,15 +20,7 @@ const images: GalleryImage[] = [
   { src: "/our-works/branding/Techcora.png", alt: "Techcora" },
   { src: "/our-works/branding/YourCue.png", alt: "YourCue" },
 ];
-type Blogs = {
-  id: string;
-  category: string;
-  date: string;
-  title: string;
-  imageSrc: string;
-};
-
-const blogs: Blogs[] = [
+const blogs: Article[] = [
   {
     id: "digital-marketing",
     category: "Resources",

@@ -42,8 +42,7 @@ export default function Footer() {
 
     return (
         <footer
-            className="w-full"
-            style={{ backgroundColor: '#021B2A', fontFamily: 'Urbanist' }}
+            className="w-full bg-brand-bg font-sans"
         >
             <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[80px]">
 

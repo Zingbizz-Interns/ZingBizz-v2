@@ -187,9 +187,6 @@ export function useTetris() {
         });
     }, [board, gameOver, isPaused, isPlaying]);
 
-    const restart = useCallback(() => {
-        startGame();
-    }, [startGame]);
 
     // Build display board
     const displayBoard: Board = board.map((row) => [...row]);
@@ -220,7 +217,6 @@ export function useTetris() {
         hardDrop,
         togglePause,
         startGame,
-        restart,
     };
 }
 

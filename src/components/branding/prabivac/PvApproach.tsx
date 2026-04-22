@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function PvApproach() {
   const textVariants = {
@@ -101,9 +102,11 @@ export default function PvApproach() {
               viewport={{ once: true, margin: "-100px" }}
               variants={textVariants}
             >
-              <img
+              <Image
                 src="/branding/prabivac/logo.jpg"
                 alt="Design Inspired By Engineering"
+                width={630}
+                height={473}
                 className="w-full h-auto object-contain max-w-[500px]"
               />
             </motion.div>
@@ -122,9 +125,11 @@ export default function PvApproach() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
             >
-              <img
-                src="/branding/prabivac/pumps%20logo1.png"
+              <Image
+                src="/branding/prabivac/pumps logo1.png"
                 alt="Prabivac Pumps Logo Variations 1"
+                width={361}
+                height={501}
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -172,9 +177,11 @@ export default function PvApproach() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <img
-                src="/branding/prabivac/pumps%20logo2.png"
+              <Image
+                src="/branding/prabivac/pumps logo2.png"
                 alt="Prabivac Pumps Logo Variations 2"
+                width={360}
+                height={501}
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -289,9 +296,11 @@ export default function PvApproach() {
 
       {/* Pattern Image Section */}
       <section className="w-full bg-white relative">
-        <img
+        <Image
           src="/branding/prabivac/pattern.jpg"
           alt="Prabivac Brand Pattern"
+          width={1440}
+          height={400}
           className="w-full h-auto object-cover"
         />
       </section>

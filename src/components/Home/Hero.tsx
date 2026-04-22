@@ -88,7 +88,7 @@ export default function Hero() {
             style={{ x: x1, y: y1 }}
           >
             <span className="text-white font-mono tracking-wider text-sm md:text-base drop-shadow-md whitespace-nowrap">
-              // Design
+              {"// Design"}
             </span>
           </motion.div>
 
@@ -98,7 +98,7 @@ export default function Hero() {
             style={{ x: x2, y: y2 }}
           >
             <span className="text-white font-mono tracking-wider text-sm md:text-base drop-shadow-md whitespace-nowrap">
-              // Development
+              {"// Development"}
             </span>
           </motion.div>
 
@@ -108,7 +108,7 @@ export default function Hero() {
             style={{ x: x3, y: y3 }}
           >
             <span className="text-white font-mono tracking-wider text-sm md:text-base drop-shadow-md whitespace-nowrap">
-              // Marketing
+              {"// Marketing"}
             </span>
           </motion.div>
         </div>

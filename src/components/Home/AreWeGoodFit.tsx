@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const GOOD_GREEN = "rgba(123, 178, 72, 1)";
-const NOT_BLUE = "rgba(35, 84, 113, 1)";
+const NOT_FIT_COLOR = "rgba(35, 84, 113, 1)";
 
 type FitItem = { text: string };
 
@@ -162,7 +162,7 @@ export default function AreWeGoodFit() {
           />
           <FitCard
             title="Probably Not"
-            accentColor={NOT_BLUE}
+            accentColor={NOT_FIT_COLOR}
             items={notAGoodFit}
             thumbDirection="down"
             enterFrom="right"

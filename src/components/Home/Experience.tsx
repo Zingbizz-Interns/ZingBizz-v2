@@ -4,18 +4,6 @@ import { motion, useInView, useSpring, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 
-// Animated counter hook
-function useCountUp(target: number, inView: boolean) {
-  const spring = useSpring(0, { stiffness: 60, damping: 20 });
-  const display = useTransform(spring, (v) => `> ${Math.floor(v)}`);
-
-  useEffect(() => {
-    if (inView) spring.set(target);
-  }, [inView, target, spring]);
-
-  return display;
-}
-
 const metrics = [
   { icon: "/assets/heart.svg", label: "Experience", value: 8, suffix: "Y" },
   { icon: "/assets/project-complete.svg", label: "Projects Completed", value: 600, suffix: "" },
@@ -116,9 +104,9 @@ export default function Experience() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 bg-black hover:bg-white hover:text-black border border-white/ text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors duration-300"
+              className="inline-flex items-center gap-2 bg-black hover:bg-white hover:text-black border border-white/10 text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors duration-300"
             >
-              Let's Talk
+              Let&apos;s Talk
               <svg className="hover:stroke-black" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 13L13 3M13 3H6M13 3V10" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>

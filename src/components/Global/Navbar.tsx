@@ -5,16 +5,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { useIsMounted } from "@/hooks/useIsMounted";
+
+const NAV_ITEMS = ["Our Works", "About Us", "Blog"];
 
 export default function Navbar() {
   const { scrollY } = useScroll();
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const mounted = useIsMounted();
 
   useEffect(() => {
     return scrollY.on("change", (latest) => {
@@ -50,7 +49,7 @@ export default function Navbar() {
 
         {/* Center: Navigation Links — desktop only */}
         <div className="hidden md:flex items-center gap-8">
-          {["Our Works", "About Us", "Blog"].map((item) => (
+          {NAV_ITEMS.map((item) => (
             <Link
               key={item}
               href={`#${item.toLowerCase().replace(" ", "-")}`}
@@ -104,7 +103,7 @@ export default function Navbar() {
       {/* Mobile drawer — only rendered after mount to avoid SSR mismatch */}
       {mounted && menuOpen && (
         <div className="md:hidden px-6 py-4 flex flex-col gap-4 border-t border-white/10 rounded-b-2xl">
-          {["Our Works", "About Us", "Blog"].map((item) => (
+          {NAV_ITEMS.map((item) => (
             <Link
               key={item}
               href={`#${item.toLowerCase().replace(" ", "-")}`}

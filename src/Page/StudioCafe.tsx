@@ -2,7 +2,7 @@ import Navbar from "@/components/Global/Navbar";
 
 export default function StudioCafePage() {
     return (
-        <main className="min-h-screen bg-[brand-bg] text-white font-sans selection:bg-brand-red selection:text-white">
+        <main className="min-h-screen bg-brand-bg text-white font-sans selection:bg-brand-red selection:text-white">
             <Navbar />
             <section className="flex flex-col items-center justify-center min-h-screen px-6 lg:px-24">
                 <h1 className="text-5xl md:text-7xl font-semibold text-center">

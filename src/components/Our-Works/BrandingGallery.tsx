@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView, type Easing } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 

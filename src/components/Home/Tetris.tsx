@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useCallback, useState } from "react";
+import { useEffect, useCallback } from "react";
 import { useTetris } from "@/hooks/useTetris";
 
 const BOARD_COLS = 14;
@@ -29,7 +29,6 @@ export default function Tetris() {
     hardDrop,
     togglePause,
     startGame,
-    restart,
   } = useTetris();
 
   const gridW = "80vw";
@@ -156,7 +155,7 @@ export default function Tetris() {
             <div className="absolute inset-0 bg-black/80 flex flex-col items-center justify-center z-30 pointer-events-auto">
               <p className="text-white text-xl mb-4">Score: {score}</p>
               <button
-                onClick={restart}
+                onClick={startGame}
                 className="px-6 py-3 bg-[#3b82f6] text-white font-medium rounded-md hover:bg-blue-600 transition-colors"
               >
                 Game Over! Play again
